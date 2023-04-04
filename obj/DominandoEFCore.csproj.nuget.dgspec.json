@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Desenvolvimento\\Entity\\Curso\\DominandoEFCore.csproj": {}
+    "C:\\Desenvolvimento\\Entity\\Curso\\DominandoEFCore.csproj": {}
   },
   "projects": {
-    "c:\\Desenvolvimento\\Entity\\Curso\\DominandoEFCore.csproj": {
+    "C:\\Desenvolvimento\\Entity\\Curso\\DominandoEFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Desenvolvimento\\Entity\\Curso\\DominandoEFCore.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\Entity\\Curso\\DominandoEFCore.csproj",
         "projectName": "DominandoEFCore",
-        "projectPath": "c:\\Desenvolvimento\\Entity\\Curso\\DominandoEFCore.csproj",
+        "projectPath": "C:\\Desenvolvimento\\Entity\\Curso\\DominandoEFCore.csproj",
         "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
-        "outputPath": "c:\\Desenvolvimento\\Entity\\Curso\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\Entity\\Curso\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
