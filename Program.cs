@@ -11,7 +11,18 @@ namespace Curso
     {
         static void Main(string[] args)
         {
-           EnsureCreatedAndDeleted();
+           //EnsureCreatedAndDeleted();
+           HealthCheckBancoDeDados();
+        }
+
+        static void HealthCheckBancoDeDados()
+        {
+            using var db = new Curso.Data.ApplicationContext();
+            var canConnect = db.Database.CanConnect();
+
+            if(canConnect) System.Console.WriteLine("Posso me conectar");
+            else System.Console.WriteLine("Não posso me conectar");
+
         }
 
         static void EnsureCreatedAndDeleted()
