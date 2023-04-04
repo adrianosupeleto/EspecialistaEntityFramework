@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
 
@@ -12,7 +13,17 @@ namespace Curso
         static void Main(string[] args)
         {
            //EnsureCreatedAndDeleted();
-           HealthCheckBancoDeDados();
+           //GapDoEnsureCreated();
+           //HealthCheckBancoDeDados();
+            ExecuteSQL();
+        }
+
+        static void ExecuteSQL()
+        {
+            using var db = new Curso.Data.ApplicationContext();
+
+            var descricao = "Teste";
+            db.Database.ExecuteSqlRaw("update departamentos set descricao={0} where id = 1",descricao);
         }
 
         static void HealthCheckBancoDeDados()
